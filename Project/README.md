@@ -127,49 +127,44 @@ plt.show()
 
 ![Likelihood of Skills Requested in SEA Job Postings](./images/Likelihood_of_Skills_Requested_in_SEA_Job_Postings.png)
 
-*Bar graph visualizing the percentages of skill requested for the top 5 jobs and their top 5 skills associated with each one.*
+_Bar graph visualizing the percentages of skill requested for the top 5 jobs and their top 5 skills associated with each one._
 
 ### Insights:
 
 #### Overall Trend
 
-* SQL and Python are universal skills:
+- SQL and Python are universal skills:
+  - SQL demand ranges from 30.75% (Software Engineer) up to 57.66% (Data Engineer).
 
-    * SQL demand ranges from 30.75% (Software Engineer) up to 57.66% (Data Engineer).
+  - Python is consistently high, peaking at 58.62% (Data Scientist) and 52.68% (Data Engineer).
 
-    * Python is consistently high, peaking at 58.62% (Data Scientist) and 52.68% (Data Engineer).
+- Excel remains critical for business-oriented roles:
+  - 41.13% of Business Analyst postings and 37.98% of Data Analyst postings require Excel.
 
-* Excel remains critical for business-oriented roles:
+  - In contrast, Excel demand is negligible for Data Engineers and Software Engineers.
 
-    * 41.13% of Business Analyst postings and 37.98% of Data Analyst postings require Excel.
+- Visualization tools are role-specific:
+  - Tableau and Power BI are strong for Analysts (25.87% and 19.76% for Data Analyst; 21.73% and 19.03% for Business Analyst).
 
-    * In contrast, Excel demand is negligible for Data Engineers and Software Engineers.
+  - Their relevance drops below 20% for technical roles like Data Scientist and Engineer.
 
-* Visualization tools are role-specific:
+- Cloud & Big Data skills are concentrated in technical roles:
+  - Spark (28.51%) and AWS (26.47%) are key for Data Engineers.
 
-    * Tableau and Power BI are strong for Analysts (25.87% and 19.76% for Data Analyst; 21.73% and 19.03% for Business Analyst).
+  - Software Engineers also show demand for AWS (16.21%) and Linux (14.36%).
 
-    * Their relevance drops below 20% for technical roles like Data Scientist and Engineer.
+- Key Takeaways
+  - Python is emerging as the common language across data-related roles.
 
-* Cloud & Big Data skills are concentrated in technical roles:
+  - SQL remains a non-negotiable foundation skill across all positions.
 
-    * Spark (28.51%) and AWS (26.47%) are key for Data Engineers.
-
-    * Software Engineers also show demand for AWS (16.21%) and Linux (14.36%).
-
-* Key Takeaways
-
-    * Python is emerging as the common language across data-related roles.
-
-    * SQL remains a non-negotiable foundation skill across all positions.
-
-    * Business-focused roles (Analyst, BA) emphasize Excel + Visualization, while technical roles (Engineer, Scientist, SE) prioritize Python + Cloud/Big Data.
+  - Business-focused roles (Analyst, BA) emphasize Excel + Visualization, while technical roles (Engineer, Scientist, SE) prioritize Python + Cloud/Big Data.
 
 ## 2. How are in-demand skills trending for Top 5 jobs?
 
 To find how skills are trending of job dataset in 2023 for top 5 jobs in SEA, I filtered the top 5 positions and grouped the skills by the month of the job postings. This helped me get the top 5 skills of top 5 positions by month, showing how popular skills were throughout 2023.
 
-Look through my notebook with detailed steps here: [3_SKill_Trend](Project\3_Skill_Trend.ipynb).
+Look through my notebook with detailed steps here: [3_SKill_Trend](3_Skill_Trend.ipynb).
 
 ```python
 df_plot = df_SEA_pivot_percent.iloc[:, :5]
@@ -227,29 +222,34 @@ plt.show()
 
 ![Trending Top SKills for Top 5 Roles in SEA](./images/Trending_Top_SKills_for_Top_5_Roles_in_SEA.png)
 
-
-*Bar graph demonstrates the trending top skills for top 5 roles in SEA in 2023.*
+_Bar graph demonstrates the trending top skills for top 5 roles in SEA in 2023._
 
 ### Insights:
 
 #### Trends Over Time
 
-* SQL: Consistently the top skill, fluctuating around 45–50%. It remains a foundational and almost mandatory requirement in most job postings.
+- SQL: Consistently the top skill, fluctuating around 45–50%. It remains a foundational and almost mandatory requirement in most job postings.
 
-* Python: Second in demand, stable at 40–43%, highlighting its role as the common programming language across data-related positions.
+- Python: Second in demand, stable at 40–43%, highlighting its role as the common programming language across data-related positions.
 
-* Excel: Maintains a mid-level presence at 22–25%, primarily supporting business-oriented roles such as Data Analyst and Business Analyst.
+- Excel: Maintains a mid-level presence at 22–25%, primarily supporting business-oriented roles such as Data Analyst and Business Analyst.
 
-* Tableau: Steady at 17–20%, reflecting stable but not explosive demand for visualization capabilities.
+- Tableau: Steady at 17–20%, reflecting stable but not explosive demand for visualization capabilities.
 
-* Power BI: Lowest demand at 12–15%, yet still relevant for Business Analyst and Data Analyst roles.
+- Power BI: Lowest demand at 12–15%, yet still relevant for Business Analyst and Data Analyst roles.
 
 #### Key Insights
 
-* SQL and Python are core pillars: Their consistently high demand throughout the year confirms they are long-term essentials rather than short-lived trends.
+- SQL and Python are core pillars: Their consistently high demand throughout the year confirms they are long-term essentials rather than short-lived trends.
 
-* Excel remains resilient: While less critical for technical roles, it continues to hold steady importance for business-focused positions.
+- Excel remains resilient: While less critical for technical roles, it continues to hold steady importance for business-focused positions.
 
-* Visualization tools (Tableau, Power BI): Demand is stable but not accelerating, indicating they serve as complementary rather than core skills.
+- Visualization tools (Tableau, Power BI): Demand is stable but not accelerating, indicating they serve as complementary rather than core skills.
 
-* No sharp fluctuations across skills: The 2023 trend line is relatively flat, suggesting the SEA job market has already established a clear and stable skill set requirement.
+- No sharp fluctuations across skills: The 2023 trend line is relatively flat, suggesting the SEA job market has already established a clear and stable skill set requirement.
+
+## 3. How well each skill and job pay for the top 5 roles?
+
+To identify the highest-paying roles and skills, I only got jobs in Southeast Asia and take a look at their mean salary. But first I had to look at the salary distributions of popular jobs like Data Analyst, Data Engineer and Data Scientist in order to get an idea of which jobs are paid the most.
+
+View my notebook with detailed steps here: [4_Salary_Analysis](4_Salary_Trend.ipynb)
