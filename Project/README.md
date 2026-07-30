@@ -220,7 +220,7 @@ plt.show()
 
 ### The Results
 
-![Trending Top SKills for Top 5 Roles in SEA](./images/Trending_Top_SKills_for_Top_5_Roles_in_SEA.png)
+![Trending Top SKills for Top 5 Roles in SEA](./images/Likelihood_of_Skills_Requested_in_SEA_Job_Postings.png)
 
 _Bar graph demonstrates the trending top skills for top 5 roles in SEA in 2023._
 
