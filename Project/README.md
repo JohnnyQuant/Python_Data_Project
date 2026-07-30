@@ -125,10 +125,4 @@ plt.show()
 
 ### The Result
 
-![Likelihood of Skills Requested in SEA Job Postings](Project\images\Likelihood_of_Skills_Requested_in_SEA_Job_Postings.png)
-
-
-
-
-
-
+![Likelihood of Skills Requested in SEA Job Postings](./images/Likelihood_of_Skills_Requested_in_SEA_Job_Postings.png)
