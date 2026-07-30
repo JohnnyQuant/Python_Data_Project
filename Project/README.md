@@ -21,11 +21,11 @@ For my attempt to explore the top 5 jobs in this dataset, I took advantage if se
 - **Visual Studio Code:** My code editor for executing my Python scripts.
 - **Git & GitHub:** Essential for version control and sharing my Python code and analysis, ensuring collaboration and project tracking.
 
-# Data Preparation and Cleanup
+# 📂 Data Preparation and Cleanup
 
 This section outlines the steps taken to prepare the data for analysis, ensuring accuracy and usability.
 
-## Import & Clean Up Data
+## 📥 Import & Clean Up Data
 
 I start by importing necessary libraries and loading the dataset, followed by initial data cleaning tasks to ensure data quality.
 
@@ -47,7 +47,7 @@ df['job_posted_date'] = pd.to_datetime(df['job_posted_date'])
 df['job_skills'] = df['job_skills'].apply(lambda skill: ast.literal_eval(skill) if pd.notna(skill) else skill)
 ```
 
-## Filter SEA Jobs
+## 📝 Filter SEA Jobs
 
 ```python
 # Countries belong to Southeast Asia
@@ -59,17 +59,17 @@ countries = ['Brunei', 'Cambodia', 'Indonesia', 'Laos', 'Malaysia' , 'Myanmar'
 df_SEA = df[df['job_country'].isin(countries)]
 ```
 
-# The Analysis
+# ⚙️ The Analysis
 
 Each Jupyter notebook for this project aimed at investigating specific aspects of the dataset. Here’s how I approached each question:
 
-## 1. What are the most demanded skills for the top 3 most popular data roles?
+## I. What are the most demanded skills for the top 3 most popular data roles?
 
 To find the most demanded skills for the top 5 most popular roles. I filtered out those positions by which ones were the most popular, and got the top 5 skills for these top 5 roles. This query highlights the most popular job titles and their top skills, showing which skills I should pay attention to depending on the role I'm targeting.
 
 View my notebook with detailed steps here: [2_Skill_Demand](2_Skill_Demand.ipynb).
 
-### Visualize Data
+### 🧮 Visualize Data
 
 ```python
 fig, ax = plt.subplots(
@@ -125,15 +125,15 @@ fig.tight_layout(h_pad=1) # fix the overlap
 plt.show()
 ```
 
-### The Result
+### ✅ The Result
 
 ![Likelihood of Skills Requested in SEA Job Postings](./images/Likelihood_of_Skills_Requested_in_SEA_Job_Postings.png)
 
 _Bar graph visualizing the percentages of skill requested for the top 5 jobs and their top 5 skills associated with each one._
 
-### Insights:
+### 🎯 Insights:
 
-#### Overall Trend
+#### 📊 Overall Trend
 
 - SQL and Python are universal skills:
   - SQL demand ranges from 30.75% (Software Engineer) up to 57.66% (Data Engineer).
@@ -155,20 +155,21 @@ _Bar graph visualizing the percentages of skill requested for the top 5 jobs and
 
   - Software Engineers also show demand for AWS (16.21%) and Linux (14.36%).
 
-- Key Takeaways
-  - Python is emerging as the common language across data-related roles.
+#### 🔑 Key Takeaways
 
-  - SQL remains a non-negotiable foundation skill across all positions.
+- Python is emerging as the common language across data-related roles.
 
-  - Business-focused roles (Analyst, BA) emphasize Excel + Visualization, while technical roles (Engineer, Scientist, SE) prioritize Python + Cloud/Big Data.
+- SQL remains a non-negotiable foundation skill across all positions.
 
-## 2. How are in-demand skills trending for Top 5 jobs?
+- Business-focused roles (Analyst, BA) emphasize Excel + Visualization, while technical roles (Engineer, Scientist, SE) prioritize Python + Cloud/Big Data.
+
+## II. How are in-demand skills trending for Top 5 jobs?
 
 To find how skills are trending of job dataset in 2023 for top 5 jobs in SEA, I filtered the top 5 positions and grouped the skills by the month of the job postings. This helped me get the top 5 skills of top 5 positions by month, showing how popular skills were throughout 2023.
 
 Look through my notebook with detailed steps here: [3_SKill_Trend](3_Skill_Trend.ipynb).
 
-### Visualize Data
+### 🧮 Visualize Data
 
 ```python
 df_plot = df_SEA_pivot_percent.iloc[:, :5]
@@ -222,15 +223,15 @@ for index in range(5):
 plt.show()
 ```
 
-### The Results
+### ✅ The Results
 
 ![Trending Top SKills for Top 5 Roles in SEA](./images/Trending_Top_SKills_for_Top_5_Roles_in_SEA.png)
 
 _Bar graph demonstrates the trending top skills for top 5 roles in SEA in 2023._
 
-### Insights:
+### 🎯 Insights:
 
-#### Trends Over Time
+#### 📈 Trends Over Time
 
 - SQL: Consistently the top skill, fluctuating around 45–50%. It remains a foundational and almost mandatory requirement in most job postings.
 
@@ -242,7 +243,7 @@ _Bar graph demonstrates the trending top skills for top 5 roles in SEA in 2023._
 
 - Power BI: Lowest demand at 12–15%, yet still relevant for Business Analyst and Data Analyst roles.
 
-#### Key Insights
+#### 🔑 Key Insights
 
 - SQL and Python are core pillars: Their consistently high demand throughout the year confirms they are long-term essentials rather than short-lived trends.
 
@@ -252,13 +253,13 @@ _Bar graph demonstrates the trending top skills for top 5 roles in SEA in 2023._
 
 - No sharp fluctuations across skills: The 2023 trend line is relatively flat, suggesting the SEA job market has already established a clear and stable skill set requirement.
 
-## 3. How well each skill and job pay for the top 5 roles?
+## III. How well each skill and job pay for the top 5 roles?
 
 To identify the highest-paying roles and skills, I only got jobs in Southeast Asia and take a look at their mean salary. But first I had to look at the salary distributions of popular jobs like Data Analyst, Data Engineer and Data Scientist in order to get an idea of which jobs are paid the most.
 
-View my notebook with detailed steps here: [4_Salary_Analysis](4_Salary_Trend.ipynb)
+View my notebook with detailed steps here: [4_Salary_Analysis](4_Salary_Analysis.ipynb)
 
-### Visualize Data
+### 🧮 Visualize Data
 
 ```python
 fig, ax = plt.subplots(figsize = (15, 8))
@@ -302,9 +303,9 @@ plt.show()
 
 _Box plot visualizing the salary distributions for the top 5 job titles._
 
-### Insights
+### 🎯 Insights
 
-#### Role-by-Role Analysis
+#### 💰 Role-by-Role Analysis
 
 - Data Scientist
   - Salary distribution is wide, with most data points between $60K–$150K, and some reaching nearly $200K.
@@ -331,7 +332,7 @@ _Box plot visualizing the salary distributions for the top 5 job titles._
 
   - Lower salaries compared to technical positions, reflecting a focus on business processes rather than advanced technical skills.
 
-#### Key Insights
+#### 🔑 Key Insights
 
 - Data Scientist and Data Engineer command the highest salaries with broad ranges, underscoring the value of specialized data and technology expertise.
 
@@ -345,7 +346,7 @@ _Box plot visualizing the salary distributions for the top 5 job titles._
 
 Next, I mainly focus on only data of top 5 jobs. Hence, I looked at the highest-paid skills and the most in-demand skills and I used two bar charts to showcase these
 
-### Visualize Data
+### 🧮 Visualize Data
 
 ```python
 fig, ax = plt.subplots(
@@ -406,41 +407,138 @@ plt.tight_layout()
 plt.show()
 ```
 
-### Results
+### ✅ Results
 
 Here's the breakdown of the highest-paid & most in-demand skills for top 5 roles in SEA:
 
 ![The highest-paid & most in-demand skills for top 5 roles](./images/The%20highest-paid_and_most_in-demand_skills_for_top_5_roles.png)
 
-### Insights
+### 🎯 Insights
 
-#### Highest Paid Skills
+#### 💰 Highest Paid Skills
 
-* Less common but specialized skills such as mxnet, kotlin, asana, fastapi are among the highest median salaries (close to $100K).
+- Less common but specialized skills such as mxnet, kotlin, asana, fastapi are among the highest median salaries (close to $100K).
 
-* Collaboration tools like Zoom, Slack, Asana also appear in the high-paying group, showing that project management and teamwork capabilities can deliver significant value.
+- Collaboration tools like Zoom, Slack, Asana also appear in the high-paying group, showing that project management and teamwork capabilities can deliver significant value.
 
-* DevOps frameworks (Puppet, Chef) and AI/ML frameworks (PyTorch, Flask) are also in the top tier, reflecting demand for deep technical expertise.
+- DevOps frameworks (Puppet, Chef) and AI/ML frameworks (PyTorch, Flask) are also in the top tier, reflecting demand for deep technical expertise.
 
-#### Most In-Demand Skills
+#### 📈 Most In-Demand Skills
 
-* Core and widely used skills such as Spark, Python, Java, SQL, Excel are the most in demand.
+- Core and widely used skills such as Spark, Python, Java, SQL, Excel are the most in demand.
 
-* Cloud and BI tools (Azure, AWS, Power BI, Tableau) are also highly sought after, highlighting the shift toward data analytics and cloud infrastructure.
+- Cloud and BI tools (Azure, AWS, Power BI, Tableau) are also highly sought after, highlighting the shift toward data analytics and cloud infrastructure.
 
-* Python and SQL stand out as both highly demanded and cross-role essentials, reinforcing their “must-have” status.
+- Python and SQL stand out as both highly demanded and cross-role essentials, reinforcing their “must-have” status.
 
-#### Key Insights
+#### 🔑 Key Insights
 
-* There is a clear distinction between “high pay” vs. “high demand”:
+- There is a clear distinction between “high pay” vs. “high demand”:
+  - Popular skills (Python, SQL, Excel) → high demand but more moderate salaries.
 
-  * Popular skills (Python, SQL, Excel) → high demand but more moderate salaries.
+  - Specialized, niche skills (mxnet, fastapi, DevOps tools) → lower demand but significantly higher pay.
 
-  * Specialized, niche skills (mxnet, fastapi, DevOps tools) → lower demand but significantly higher pay.
+- Career strategy:
+  - For broader job opportunities, focus on Python, SQL, Spark, Excel.
 
-* Career strategy:
+  - For maximizing income, invest in specialized skills such as ML frameworks (mxnet, PyTorch), DevOps (Chef, Puppet), or niche languages like Kotlin.
 
-  * For broader job opportunities, focus on Python, SQL, Spark, Excel.
+## IV. What are the optimal skills for all 5 roles of the top to learn?
 
-  * For maximizing income, invest in specialized skills such as ML frameworks (mxnet, PyTorch), DevOps (Chef, Puppet), or niche languages like Kotlin.
+To identify the most optimal skills to learn ( the ones that are the highest paid and highest in demand) I calculated the percent of skill demand and the median salary of these skills. To easily identify which are the most optimal skills to learn.
 
+View my notebook with detailed steps here: [5_Optimal](5_Optimal_Skills.ipynb)
+
+### 🧮 Visualize Data
+
+```python
+fig, ax = plt.subplots(figsize = (15, 8))
+
+sns.set_theme(
+                style='ticks'
+                , palette = 'muted'
+                , context="talk"
+                , font = 'serif'
+                , font_scale = 0.7)
+
+sns.scatterplot(
+                data=df_SEA_skills_tech_high_demand
+                , x = 'skill_percent'
+                , y = 'mean_salary'
+                , hue = 'technology')
+
+sns.despine(offset=2)
+
+# Set axis labels, title, and legend
+plt.title(
+            'Most Optimal Skills for Top 5 Jobs in SEA'
+            , fontdict={'fontsize': 25, 'fontweight': 'bold'})
+
+plt.xlabel(
+            'Percent of Top 5 Jobs'
+            , fontdict={'fontsize': 20}
+            , loc = 'center')
+
+plt.ylabel(
+            'Yearly Mean Salary (USD)'
+            , fontdict={'fontsize': 20})
+
+for index, txt in enumerate(df_SEA_skills_tech_high_demand['skills'].values):
+    plt.text(
+            df_SEA_skills_tech_high_demand['skill_percent'].iloc[index]
+            , df_SEA_skills_tech_high_demand['mean_salary'].iloc[index]
+            , "  " + txt)
+
+plt.gca().yaxis.set_major_formatter(plt.FuncFormatter(lambda y, _: f'${int(y/1000):,}K'))
+plt.gca().xaxis.set_major_formatter(PercentFormatter(decimals=0))
+
+plt.gca().tick_params(axis='x', labelsize = 15)
+plt.gca().tick_params(axis='y', labelsize = 15)
+
+plt.legend(
+            title='Technology'
+            , fontsize = 15)
+plt.xlim(0, 12)
+
+plt.show()
+```
+
+### ✅ The Results
+
+![Most Optimal Skills for Top 5 Jobs in SEA](./images/Most_Optimal_Skills_for_Top_5_Jobs_in_SEA.png)
+
+\*A scatter plot visualizing the most optimal skills (high paying & high demand) for top 5 job titles in SEA with colored labels for skill group.
+
+### 🎯 Insights
+
+#### 📊 Analysis by Skill Group
+
+- Programming (Python, SQL, Java, R)
+  - Python and SQL appear most frequently in top jobs (high frequency ~10–12%), though their average salaries are moderate.
+
+  - Java and R are less common but maintain stable salary levels.
+    → This group represents the “must-have” skills for job accessibility, especially Python and SQL.
+
+- Analyst Tools (Excel, Tableau, Power BI)
+  - Moderate presence (~5–8%), with salaries lower than cloud or libraries.
+
+  - Primarily aligned with business analysis and visualization roles.
+    → Suitable for Analyst/BA positions, but not salary drivers.
+
+- Cloud (Azure, AWS)
+  - Lower frequency (<5%), yet higher salaries compared to Analyst Tools.
+    → Cloud skills provide financial advantage, even if less common than Python/SQL.
+
+- Libraries (Spark, Hadoop)
+  - Appear infrequently (<5%), but associated with the highest salaries in the chart.
+    → Specialized, niche skills that are rare and therefore highly compensated.
+
+#### 🔑 Key Insights
+
+- Python and SQL = Popular + Must-have: Expand job opportunities but not the highest-paying skills.
+
+- Spark and Hadoop = Rare but High-paying: Investing in big data expertise can maximize income.
+
+- Cloud skills (AWS, Azure): Positioned in the middle—financially rewarding and increasingly in demand.
+
+- Analyst tools (Excel, Tableau, Power BI): Important for business-oriented roles, but not decisive for high salaries.
