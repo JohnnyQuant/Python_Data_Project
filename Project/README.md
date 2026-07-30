@@ -1,6 +1,8 @@
-# Overview
+# 📘 Overview
 
-# The Questions
+Welcome to my analysis of job market dataset. This project explores the top 5 most popular data roles in Southeast Asia (SEA) by analyzing job postings and salary data. Using Python and key libraries (Pandas, Matplotlib, Seaborn), I explore key questions such as the most demanded skills, salary trends, and the intersection of demand and salary in top 5 job titles. The study investigates four main questions:
+
+### 📌 The Questions
 
 I would love to answer the following questions in project:
 
@@ -542,3 +544,90 @@ plt.show()
 - Cloud skills (AWS, Azure): Positioned in the middle—financially rewarding and increasingly in demand.
 
 - Analyst tools (Excel, Tableau, Power BI): Important for business-oriented roles, but not decisive for high salaries.
+
+# 📝 What I Got
+
+Throughout this project, I learned from Luke Barousse how to deepen my understanding of analysis skills for this job market dataset and gained a lot of knowledge of technical skills in Python, especially in data manipulation and visualization. Here are useful things I learned:
+
+  - **Basic and Advanced Python Usage:** Utilizing container data types, loops, DataFrame, Series, ... to get a clear correlation between the demand for specific skills and the salaries for these skills command. Advanced and specialized skills like Python and Spark often lead to higher salaries.
+
+  - **Market Trends:** There are changing trends in skill demand, highlighting the dynamic nature of the data job market. Keeping up with these trends is essential for career growth in technical jobs.
+
+  - **Economic Values Skills:** The project emphasized the importance of aligning one's skills with market demand. Understanding the relationship between skill demand, salary, and job availability allows for more strategic career planning in the tech industry.
+
+# 🏆 Insights
+
+This project provided several general insights into the tech industry:
+
+  ### 📊 Overall Insights
+
+  - Foundational & Popular Skills
+
+    - SQL and Python are “must-have” skills across all roles, with consistently high demand over time.
+
+    - These are the core skills that expand job opportunities, especially for Data Engineers and Data Scientists.
+
+  - Business-Oriented Skills
+
+    - Excel, Tableau, and Power BI remain important for Business Analyst and Data Analyst roles.
+
+    - However, they are not the main drivers of high salaries, serving more as tools for reporting and visualization.
+
+  - Specialized & Niche Skills
+
+    - Spark, Hadoop, mxnet, fastapi, and DevOps tools (Chef, Puppet) are less common but linked to higher salaries.
+
+    - These skills provide a competitive edge in income, suitable for professionals aiming to specialize in big data or AI/ML.
+
+  - SEA Market Trends
+
+    - Skill demand remained relatively stable throughout 2023, with no major fluctuations.
+
+    - This indicates that the SEA job market has already established a clear set of core skills rather than chasing short-term trends.
+
+  - Salary Gap
+
+    - Data Scientist and Data Engineer earn the highest salaries, reflecting the value of specialized expertise.
+
+    - Software Engineer salaries are competitive and stable but lower than the top two roles.
+
+    - Data Analyst and Business Analyst fall into the mid-level salary range, aligned with business-oriented responsibilities.
+
+  ### 🔑 Career Strategy Insights
+  - For broader job opportunities → focus on Python + SQL.
+
+  - For maximizing income → invest in Spark, Hadoop, Cloud, and niche frameworks.
+
+  - For a business-oriented career path → strengthen skills in Excel + BI tools to enhance reporting and analysis capabilities.
+
+# ⚠️ Challenges I Faced
+
+This project was not without many challenges, but it provided good learning opportunities:
+
+* Data Inconsistencies: Handling missing or inconsistent data entries requires careful consideration and thorough data-cleaning techniques to ensure the integrity of the analysis.
+* Complex Data Visualization: Designing effective visual representations of complex datasets was challenging but critical for conveying insights clearly and compellingly.
+* Balancing Breadth and Depth: Deciding how deeply to dive into each analysis while maintaining a broad overview of the data landscape required constant balancing to ensure comprehensive coverage without getting lost in details.
+
+# 🚀 Conclusion
+
+This project provides a comprehensive view of the data job market in Southeast Asia, combining demand trends, salary distributions, and skill optimization. The findings confirm that:
+
+  - SQL and Python are indispensable foundations, ensuring broad employability.
+
+  - Business tools like Excel, Tableau, and Power BI remain relevant but secondary in driving compensation.
+
+  - Specialized skills in big data (Spark, Hadoop) and niche frameworks (mxnet, fastapi, DevOps tools) offer the greatest financial upside.
+
+  - Salary gaps clearly separate technical roles from business-oriented ones, reflecting differences in expertise and scarcity.
+
+Beyond the insights, the study highlights a career roadmap:
+
+  - Build strong fundamentals with Python and SQL.
+
+  - Layer business tools for analyst roles.
+
+  - Invest in advanced big data and cloud skills to maximize earning potential.
+
+👉 In short, the SEA market has matured into a stable ecosystem where foundational skills secure opportunities and specialized expertise drives income growth. This balance offers professionals a clear path to align their learning with both market demand and financial success.
+
+
