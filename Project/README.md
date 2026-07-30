@@ -164,3 +164,92 @@ plt.show()
     * SQL remains a non-negotiable foundation skill across all positions.
 
     * Business-focused roles (Analyst, BA) emphasize Excel + Visualization, while technical roles (Engineer, Scientist, SE) prioritize Python + Cloud/Big Data.
+
+## 2. How are in-demand skills trending for Top 5 jobs?
+
+To find how skills are trending of job dataset in 2023 for top 5 jobs in SEA, I filtered the top 5 positions and grouped the skills by the month of the job postings. This helped me get the top 5 skills of top 5 positions by month, showing how popular skills were throughout 2023.
+
+Look through my notebook with detailed steps here: [3_SKill_Trend](Project\3_Skill_Trend.ipynb).
+
+```python
+df_plot = df_SEA_pivot_percent.iloc[:, :5]
+
+fig, ax = plt.subplots(figsize = (15, 8))
+sns.set_theme(
+                style='ticks'
+                , palette = 'tab10'
+                , context="talk"
+                , font = 'serif'
+                , font_scale = 0.7)
+
+sns.lineplot(
+                data = df_plot
+                , dashes=False
+                , linewidth = 4
+                , linestyle = '-'
+                , markersize = 8
+                , marker = 'o'
+                , color = 'black'
+                , legend=False)
+
+sns.despine(offset=2) # remove top and right spines
+
+plt.title(
+            'Trending Top SKills for Top 5 Roles in SEA'
+            , fontdict={'fontsize': 25, 'fontweight': 'bold'})
+
+plt.xlabel(
+            '2023'
+            , fontdict={'fontsize': 20})
+
+plt.ylabel(
+            'Likelihood of Job Postings'
+            , fontdict={'fontsize': 20})
+
+plt.gca().yaxis.set_major_formatter(PercentFormatter(decimals=0))
+plt.gca().tick_params(axis='x', labelsize = 15)
+plt.gca().tick_params(axis='y', labelsize = 15)
+plt.ylim(0, 60)
+
+# Annotate the plot with the top 5 skills using plt.text()
+for index in range(5):
+    plt.text(
+                len(df_plot.index) - 0.9
+                , df_plot.iloc[-1, index]
+                , df_plot.columns[index]
+                , color = 'black'
+                , fontdict={'fontsize': 15})
+
+plt.show()
+```
+
+### The Results
+
+![Trending Top SKills for Top 5 Roles in SEA](.\images\Trending_Top_SKills_for_Top_5_Roles_in_SEA.png)
+
+
+*Bar graph demonstrates the trending top skills for top 5 roles in SEA in 2023.*
+
+### Insights:
+
+#### Trends Over Time
+
+* SQL: Consistently the top skill, fluctuating around 45–50%. It remains a foundational and almost mandatory requirement in most job postings.
+
+* Python: Second in demand, stable at 40–43%, highlighting its role as the common programming language across data-related positions.
+
+* Excel: Maintains a mid-level presence at 22–25%, primarily supporting business-oriented roles such as Data Analyst and Business Analyst.
+
+* Tableau: Steady at 17–20%, reflecting stable but not explosive demand for visualization capabilities.
+
+* Power BI: Lowest demand at 12–15%, yet still relevant for Business Analyst and Data Analyst roles.
+
+#### Key Insights
+
+* SQL and Python are core pillars: Their consistently high demand throughout the year confirms they are long-term essentials rather than short-lived trends.
+
+* Excel remains resilient: While less critical for technical roles, it continues to hold steady importance for business-focused positions.
+
+* Visualization tools (Tableau, Power BI): Demand is stable but not accelerating, indicating they serve as complementary rather than core skills.
+
+* No sharp fluctuations across skills: The 2023 trend line is relatively flat, suggesting the SEA job market has already established a clear and stable skill set requirement.
