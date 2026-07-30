@@ -125,7 +125,7 @@ plt.show()
 
 ### The Result
 
-![Likelihood of Skills Requested in SEA Job Postings]
+![Likelihood of Skills Requested in SEA Job Postings](./images/Likelihood_of_Skills_Requested_in_SEA_Job_Postings.png)
 
 _Bar graph visualizing the percentages of skill requested for the top 5 jobs and their top 5 skills associated with each one._
 
