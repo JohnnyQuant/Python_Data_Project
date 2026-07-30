@@ -126,3 +126,41 @@ plt.show()
 ### The Result
 
 ![Likelihood of Skills Requested in SEA Job Postings](./images/Likelihood_of_Skills_Requested_in_SEA_Job_Postings.png)
+
+*Bar graph visualizing the percentages of skill requested for the top 5 jobs and their top 5 skills associated with each one.*
+
+### Insights:
+
+#### Overall Trend
+
+* SQL and Python are universal skills:
+
+    * SQL demand ranges from 30.75% (Software Engineer) up to 57.66% (Data Engineer).
+
+    * Python is consistently high, peaking at 58.62% (Data Scientist) and 52.68% (Data Engineer).
+
+* Excel remains critical for business-oriented roles:
+
+    * 41.13% of Business Analyst postings and 37.98% of Data Analyst postings require Excel.
+
+    * In contrast, Excel demand is negligible for Data Engineers and Software Engineers.
+
+* Visualization tools are role-specific:
+
+    * Tableau and Power BI are strong for Analysts (25.87% and 19.76% for Data Analyst; 21.73% and 19.03% for Business Analyst).
+
+    * Their relevance drops below 20% for technical roles like Data Scientist and Engineer.
+
+* Cloud & Big Data skills are concentrated in technical roles:
+
+    * Spark (28.51%) and AWS (26.47%) are key for Data Engineers.
+
+    * Software Engineers also show demand for AWS (16.21%) and Linux (14.36%).
+
+* Key Takeaways
+
+    * Python is emerging as the common language across data-related roles.
+
+    * SQL remains a non-negotiable foundation skill across all positions.
+
+    * Business-focused roles (Analyst, BA) emphasize Excel + Visualization, while technical roles (Engineer, Scientist, SE) prioritize Python + Cloud/Big Data.
