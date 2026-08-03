@@ -69,7 +69,7 @@ Each Jupyter notebook for this project aimed at investigating specific aspects o
 
 To find the most demanded skills for the top 5 most popular roles. I filtered out those positions by which ones were the most popular, and got the top 5 skills for these top 5 roles. This query highlights the most popular job titles and their top skills, showing which skills I should pay attention to depending on the role I'm targeting.
 
-View my notebook with detailed steps here: [2_Skill_Demand](2_Skill_Demand.ipynb).
+View my notebook with detailed steps here: [2_Skill_Demand](Project/2_Skill_Demand.ipynb).
 
 ### 🧮 Visualize Data
 
@@ -129,7 +129,7 @@ plt.show()
 
 ### ✅ The Result
 
-![Likelihood of Skills Requested in SEA Job Postings](./images/Likelihood_of_Skills_Requested_in_SEA_Job_Postings.png)
+![Likelihood of Skills Requested in SEA Job Postings](Project/images/Likelihood_of_Skills_Requested_in_SEA_Job_Postings.png)
 
 _Bar graph visualizing the percentages of skill requested for the top 5 jobs and their top 5 skills associated with each one._
 
@@ -169,7 +169,7 @@ _Bar graph visualizing the percentages of skill requested for the top 5 jobs and
 
 To find how skills are trending of job dataset in 2023 for top 5 jobs in SEA, I filtered the top 5 positions and grouped the skills by the month of the job postings. This helped me get the top 5 skills of top 5 positions by month, showing how popular skills were throughout 2023.
 
-Look through my notebook with detailed steps here: [3_SKill_Trend](3_Skill_Trend.ipynb).
+Look through my notebook with detailed steps here: [3_SKill_Trend](Project\3_Skill_Trend.ipynb).
 
 ### 🧮 Visualize Data
 
@@ -227,7 +227,7 @@ plt.show()
 
 ### ✅ The Results
 
-![Trending Top SKills for Top 5 Roles in SEA](./images/Trending_Top_SKills_for_Top_5_Roles_in_SEA.png)
+![Trending Top SKills for Top 5 Roles in SEA](Project\images\Trending_Top_SKills_for_Top_5_Roles_in_SEA.png)
 
 _Bar graph demonstrates the trending top skills for top 5 roles in SEA in 2023._
 
@@ -259,7 +259,7 @@ _Bar graph demonstrates the trending top skills for top 5 roles in SEA in 2023._
 
 To identify the highest-paying roles and skills, I only got jobs in Southeast Asia and take a look at their mean salary. But first I had to look at the salary distributions of popular jobs like Data Analyst, Data Engineer and Data Scientist in order to get an idea of which jobs are paid the most.
 
-View my notebook with detailed steps here: [4_Salary_Analysis](4_Salary_Analysis.ipynb)
+View my notebook with detailed steps here: [4_Salary_Analysis](Project\4_Salary_Analysis.ipynb)
 
 ### 🧮 Visualize Data
 
@@ -301,7 +301,7 @@ plt.gca().tick_params(axis='y', labelsize = 15)
 plt.show()
 ```
 
-![Salary Distributions of Top 5 Roles in SEA](./images/Salary%20Distributions_of_Top_5_Roles_in_SEA.png)
+![Salary_Distributions_of_Top_5_Roles_in_SEA](Project/images/Salary%20Distributions_of_Top_5_Roles_in_SEA.png)
 
 _Box plot visualizing the salary distributions for the top 5 job titles._
 
@@ -413,7 +413,7 @@ plt.show()
 
 Here's the breakdown of the highest-paid & most in-demand skills for top 5 roles in SEA:
 
-![The highest-paid & most in-demand skills for top 5 roles](./images/The%20highest-paid_and_most_in-demand_skills_for_top_5_roles.png)
+![The_highest-paid_&_most_in-demand_skills_for_top_5_roles](Project/images/The%20highest-paid_and_most_in-demand_skills_for_top_5_roles.png)
 
 ### 🎯 Insights
 
@@ -449,7 +449,7 @@ Here's the breakdown of the highest-paid & most in-demand skills for top 5 roles
 
 To identify the most optimal skills to learn ( the ones that are the highest paid and highest in demand) I calculated the percent of skill demand and the median salary of these skills. To easily identify which are the most optimal skills to learn.
 
-View my notebook with detailed steps here: [5_Optimal](5_Optimal_Skills.ipynb)
+View my notebook with detailed steps here: [5_Optimal](Project\5_Optimal_Skills.ipynb)
 
 ### 🧮 Visualize Data
 
@@ -507,7 +507,7 @@ plt.show()
 
 ### ✅ The Results
 
-![Most Optimal Skills for Top 5 Jobs in SEA](./images/Most_Optimal_Skills_for_Top_5_Jobs_in_SEA.png)
+![Most Optimal Skills for Top 5 Jobs in SEA](Project/images/Most_Optimal_Skills_for_Top_5_Jobs_in_SEA.png)
 
 \*A scatter plot visualizing the most optimal skills (high paying & high demand) for top 5 job titles in SEA with colored labels for skill group.
 
