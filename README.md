@@ -169,7 +169,7 @@ _Bar graph visualizing the percentages of skill requested for the top 5 jobs and
 
 To find how skills are trending of job dataset in 2023 for top 5 jobs in SEA, I filtered the top 5 positions and grouped the skills by the month of the job postings. This helped me get the top 5 skills of top 5 positions by month, showing how popular skills were throughout 2023.
 
-Look through my notebook with detailed steps here: [3_SKill_Trend](Project\3_Skill_Trend.ipynb).
+Look through my notebook with detailed steps here: [3_SKill_Trend](Project/3_Skill_Trend.ipynb).
 
 ### 🧮 Visualize Data
 
