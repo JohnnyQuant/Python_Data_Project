@@ -259,7 +259,7 @@ _Bar graph demonstrates the trending top skills for top 5 roles in SEA in 2023._
 
 To identify the highest-paying roles and skills, I only got jobs in Southeast Asia and take a look at their mean salary. But first I had to look at the salary distributions of popular jobs like Data Analyst, Data Engineer and Data Scientist in order to get an idea of which jobs are paid the most.
 
-View my notebook with detailed steps here: [4_Salary_Analysis](Project\4_Salary_Analysis.ipynb)
+View my notebook with detailed steps here: [4_Salary_Analysis](Project/4_Salary_Analysis.ipynb)
 
 ### 🧮 Visualize Data
 
@@ -449,7 +449,7 @@ Here's the breakdown of the highest-paid & most in-demand skills for top 5 roles
 
 To identify the most optimal skills to learn ( the ones that are the highest paid and highest in demand) I calculated the percent of skill demand and the median salary of these skills. To easily identify which are the most optimal skills to learn.
 
-View my notebook with detailed steps here: [5_Optimal](Project\5_Optimal_Skills.ipynb)
+View my notebook with detailed steps here: [5_Optimal](Project/5_Optimal_Skills.ipynb)
 
 ### 🧮 Visualize Data
 
