@@ -628,6 +628,4 @@ Beyond the insights, the study highlights a career roadmap:
 
   - Invest in advanced big data and cloud skills to maximize earning potential.
 
-👉 In short, the SEA market has matured into a stable ecosystem where foundational skills secure opportunities and specialized expertise drives income growth. This balance offers professionals a clear path to align their learning with both market demand and financial success.
-
-
+👉 In short, the SEA jobmarket has matured into a stable ecosystem where foundational skills secure opportunities and specialized expertise drives income growth. This balance offers professionals a clear path to align their learning with both market demand and financial success.
