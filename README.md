@@ -1,6 +1,6 @@
 # 📘 Overview
 
-Welcome to my analysis of job market dataset. This project explores the top 5 most popular data roles in Southeast Asia (SEA) by analyzing job postings and salary data. Using Python and key libraries (Pandas, Matplotlib, Seaborn), I explore key questions such as the most demanded skills, salary trends, and the intersection of demand and salary in top 5 job titles. The study investigates four main questions:
+Welcome to my analysis of job market dataset. This project was instructed by **Luke Barousse** explores the top 5 most popular data roles in Southeast Asia (SEA) by analyzing job postings and salary data. Using Python and key libraries (Pandas, Matplotlib, Seaborn), I explore key questions such as the most demanded skills, salary trends, and the intersection of demand and salary in top 5 job titles. The study investigates four main questions:
 
 ### 📌 The Questions
 
